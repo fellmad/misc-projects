@@ -1,0 +1,39 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <TargetVersion>Windows8</TargetVersion>
+        <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
+        <ConfigurationType>Driver</ConfigurationType>
+        <DriverType>KMDF</DriverType>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectConfiguration Include="Debug|Win32"/>
+        <ProjectConfiguration Include="Release|x64"/>
+    </ItemGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <UseDebugLibraries>true</UseDebugLibraries>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <UseDebugLibraries>false</UseDebugLibraries>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+    <ItemDefinitionGroup>
+        <Link>
+            <AdditionalDependencies>$(DDK_LIB_PATH)\wdmsec.lib;%(AdditionalDependencies)
+            </AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup>
+        <ClCompile>
+            <AdditionalIncludeDirectories>..\inc;%(AdditionalIncludeDirectories)
+            </AdditionalIncludeDirectories>
+        </ClCompile>
+    </ItemDefinitionGroup>
+    <PropertyGroup>
+        <IncludePath>$(IncludePath);..\inc</IncludePath>
+    </PropertyGroup>
+    <ItemGroup>
+        <ClCompile Include="nothing.c"/>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+</Project>
