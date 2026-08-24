@@ -1,0 +1,56 @@
+[Version]
+Signature="$Windows NT$"
+Provider=%MS%
+LayoutFile=ntprint.inf
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=04/16/2015,6.1.6930.0
+CatalogFile=ptpcplpr.cat
+
+[Manufacturer]
+"Microsoft"=Microsoft, NTx86, NTamd64, NTia64
+
+[Microsoft]
+"UniDrv PT/PC Plugin Provider"	= PTPCPLPR
+
+[Microsoft.NTx86]
+"UniDrv PT/PC Plugin Provider"	= PTPCPLPR
+
+[Microsoft.NTamd64]
+"UniDrv PT/PC Plugin Provider"	= PTPCPLPR
+
+[Microsoft.NTia64]
+"UniDrv PT/PC Plugin Provider"	= PTPCPLPR
+
+[PTPCPLPR]
+CopyFiles=@PTPCPLPR.GPD
+CopyFiles=@PTPCPLPR.INI
+CopyFiles=@PTPCPLPR.DLL
+DataFile=PTPCPLPR.GPD
+DataSection=UNIDRV_DATA
+Include=NTPRINT.INF
+Needs=UNIDRV.OEM,UNIDRV_DATA,TTFSUB.OEM
+
+[SourceDisksNames]
+100 = %OEMIntentSample%
+
+[SourceDisksFiles.X86]
+PTPCPLPR.DLL   = 100,x86
+
+[SourceDisksFiles.amd64]
+PTPCPLPR.DLL   = 100,amd64
+
+[SourceDisksFiles.IA64]
+PTPCPLPR.DLL   = 100,ia64
+
+[SourceDisksFiles]
+PTPCPLPR.GPD   = 100
+PTPCPLPR.INI   = 100
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[Strings]
+MS="Microsoft DDK Sample"
+OEMIntentSample="UniDrv PT/PC Plugin Provider"
+

@@ -1,0 +1,25 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    object,
+    uuid(4A84A4DE-1988-4113-B5AD-4BFB00DBCD9E),
+    dual,
+    nonextensible,
+    pointer_default(unique)
+]
+interface Imyclass : IDispatch {};
+[
+    uuid(56295E82-4B67-4A63-9680-9D01FF46C11C),
+    version(1.0),
+]
+library com_serverLib
+{
+    importlib("stdole2.tlb");
+    [
+        uuid(FA3C96A6-E9BA-4305-AD6E-E4B535495EC5)
+    ]
+    coclass myclass {
+        [default] interface Imyclass;
+    };
+};

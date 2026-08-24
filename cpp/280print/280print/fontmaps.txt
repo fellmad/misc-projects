@@ -1,0 +1,136 @@
+Generic Printer Definition File: 280driver.gpd
+	*ResourceDLL: "280DRV.dll"
+	resource file: uni_driver.rc
+
+registry: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\
+			DataCard 280 (Graphics)\PrinterDriverData
+
+FontCartridge: FC1
+    *rcCartridgeNameID: 270
+    	uni_driver.rc:    270    "Standard Gothic"
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(244)
+		uni_driver.rc:244   RC_UFM LOADONCALL DISCARDABLE UFM\SGOTHICa.UFM
+		Std. Gothic (10 cpi - Emboss)
+		Std. Gothic (10 cpi - Emboss) Bold
+
+FontCartridge: FC2
+    *rcCartridgeNameID: 269
+		uni_driver.rc:    269    "Farrington 7B"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(243)
+		uni_driver.rc:243   RC_UFM LOADONCALL DISCARDABLE UFM\7Ba.UFM
+		Std. Gothic (10 cpi - Emboss)
+		Std. Gothic (10 cpi - Emboss) Bold		
+
+FontCartridge: FC3
+    *rcCartridgeNameID: 
+    	uni_driver.rc:    271    "Large Gothic"
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(245)
+		uni_driver.rc:245   RC_UFM LOADONCALL DISCARDABLE UFM\LGOTHICa.UFM
+		Large Gothic (7 cpi - Emboss)
+		Large Gothic (7 cpi - Emboss) Bold
+
+FontCartridge: FC4
+    *rcCartridgeNameID: 272
+		uni_driver.rc:    272    "Hospital Elite"
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(246)
+		uni_driver.rc:246   RC_UFM LOADONCALL DISCARDABLE UFM\HOSPa.UFM
+		Hospital Elite (9 cpi - Emboss)
+		Hospital Elite (9 cpi - Emboss) Bold		
+
+FontCartridge: FC5
+    *rcCartridgeNameID: 273
+		uni_driver.rc:    273    "Hospital 7B"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(247)
+		uni_driver.rc:247   RC_UFM LOADONCALL DISCARDABLE UFM\HOSP7Ba.UFM
+		Hospital 7B (7 cpi - Emboss)
+		Hospital 7B (7 cpi - Emboss) Bold
+
+FontCartridge: FC6
+    *rcCartridgeNameID: 274
+    	uni_driver.rc:    274    "OCRA1 Indent"
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(248)
+		uni_driver.rc:248   RC_UFM LOADONCALL DISCARDABLE UFM\OCRA1a.UFM
+		OCR A1 (10 cpi - Indent)
+		OCR A1 (10 cpi - Indent) Bold		
+
+FontCartridge: FC7
+    *rcCartridgeNameID: 275
+    	uni_driver.rc:    275    "OCRB1 Indent"
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(249)
+		uni_driver.rc:249   RC_UFM LOADONCALL DISCARDABLE UFM\OCRB1a.UFM
+		OCR B1 (10 cpi - Indent)
+		OCR B1 (10 cpi - Indent) Bold
+
+FontCartridge: FC8
+    *rcCartridgeNameID: 277
+		uni_driver.rc:    277    "OCRB4 Emboss"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(251)
+		uni_driver.rc:251   RC_UFM LOADONCALL DISCARDABLE UFM\OCRB4a.UFM
+		OCR B4 (7 cpi - Emboss)
+		OCR B4 (7 cpi - Emboss) Bold		
+
+FontCartridge: FC9
+    *rcCartridgeNameID: 279
+		uni_driver.rc:    279    "OCRB4 Indent"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(253)
+		uni_driver.rc:253   RC_UFM LOADONCALL DISCARDABLE UFM\OCRB4Ia.UFM
+		OCR B4 (7 cpi - Indent)
+		OCR B4 (7 cpi - Indent) Bold
+
+FontCartridge: FC10
+    *rcCartridgeNameID: 281
+		uni_driver.rc:    281    "6mm Gothic"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(255)
+		uni_driver.rc:255   RC_UFM LOADONCALL DISCARDABLE UFM\GOTHIC6a.UFM
+		6mm Gothic (7 cpi - Emboss)
+		6mm Gothic (7 cpi - Emboss)		
+
+FontCartridge: FC11
+    *rcCartridgeNameID: 282
+		uni_driver.rc:    282    "MasterCard Indent"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(256)
+		uni_driver.rc:256   RC_UFM LOADONCALL DISCARDABLE UFM\MASTERa.UFM
+		MasterCard (14 cpi - Indent)
+		MasterCard (14 cpi - Indent) Italic		
+
+FontCartridge: FC12
+    *rcCartridgeNameID: 286
+    	uni_driver.rc:    286    "Electron Indent"
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(260)
+		uni_driver.rc:260   RC_UFM LOADONCALL DISCARDABLE UFM\OCRB4IVE.UFM    
+		OCR B4 (7 cpi - Electron Indent)
+		OCR B4 (7 cpi - Electron Indent) Bold
+
+FontCartridge: FC13
+    *rcCartridgeNameID: 289
+		uni_driver.rc:    289    "Standard Gothic (Cyrillic)"    
+    *PortraitFonts: LIST()
+    *LandscapeFonts: LIST(263)
+		uni_driver.rc:263   RC_UFM LOADONCALL DISCARDABLE UFM\SG_CYR.UFM
+		Std. Gothic (Cyrillic)
+		Std. Gothic (Cyrillic) Bold
+
+FontCartridge: FC14
+    *rcCartridgeNameID: 290
+		uni_driver.rc:    290    "Mag Stripe"    
+    *PortraitFonts: LIST(257,258,259)
+    *LandscapeFonts: LIST(257,258,259)
+		uni_driver.rc:257   RC_UFM LOADONCALL DISCARDABLE UFM\IATAa.UFM
+			IATA (210 bpi - Mag Stripe)
+		uni_driver.rc:258   RC_UFM LOADONCALL DISCARDABLE UFM\ABAa.UFM
+			ABA (75 bpi - Mag Stripe)
+		uni_driver.rc:259   RC_UFM LOADONCALL DISCARDABLE UFM\TTSa.UFM
+			TTS (210 bpi - Mag Stripe)
+
