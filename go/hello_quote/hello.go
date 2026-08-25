@@ -1,3 +1,4 @@
+// https://research.swtch.com/vgo1
 // https://github.com/rsc/hello/blob/v1.0.0/hello.go
 // https://lets-go.alexedwards.net/
 // https://lets-go-further.alexedwards.net/sample/00.00-front-matter.html
