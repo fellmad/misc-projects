@@ -1,6 +1,6 @@
 module hello
 
-go 1.26.1
+go 1.26.7
 
 require rsc.io/quote/v4 v4.0.1
 
