@@ -1,0 +1,16 @@
+{
+    "name": "lil/imageabstractor",
+    "description": "Simple example pulling colours out of an image.",
+    "type": "project",
+    "license": "GPL 3.0",
+    "authors": [
+        {
+            "name": "Morten Rand-Hendriksen",
+            "email": "morten@linkedin.com"
+        }
+    ],
+    "require": {
+        "league/color-extractor": "0.3.*",
+        "monolog/monolog": "^1.0"
+    }
+}

@@ -1,0 +1,40 @@
+There are several ways to extract plain text from a PDF document. Here are a few methods you can try:
+
+### 1. **Using Online Tools**
+- **PDF to TEXT Converter**: Websites like [FreeConvert.com](https://www.freeconvert.com/pdf-to-text) and [PDF Candy](https://pdfcandy.com/extract-text.html) allow you to upload your PDF and convert it to a text file directly in your browser⁴⁵.
+
+### 2. **Using Software**
+- **Adobe Acrobat Reader**: Open your PDF in Acrobat Reader, use the "Selection Tool" to highlight the text, right-click, and select "Copy"⁶.
+- **Icecream PDF Editor**: Download and install the software, open your PDF, go to the "Edit" tab, and use the "Select" tool to highlight and copy the text⁸.
+
+### 3. **Using OCR (Optical Character Recognition) Tools**
+- **Smallpdf**: This tool can convert scanned PDFs into readable text using OCR. Upload your PDF, let the tool process it, and then copy the text from the new PDF⁷.
+
+### 4. **Using Programming Libraries**
+- **Python**: Libraries like `PyPDF2` or `pdfminer.six` can be used to extract text programmatically. Here's a simple example using `PyPDF2`:
+
+```python
+import PyPDF2
+
+# Open the PDF file
+with open('example.pdf', 'rb') as file:
+    reader = PyPDF2.PdfFileReader(file)
+    text = ''
+    for page in range(reader.numPages):
+        text += reader.getPage(page).extract_text()
+
+print(text)
+```
+
+Do any of these methods sound like they would work for you? If you need more detailed instructions on any specific method, feel free to ask!
+
+Source: Conversation with Copilot, 9/14/2024
+(1) PDF to TEXT Converter - FreeConvert.com. https://www.freeconvert.com/pdf-to-text.
+(2) PDF to TXT - Extract Text from PDF for Free - PDF Candy. https://pdfcandy.com/extract-text.html.
+(3) How to Copy Text From a PDF - How-To Geek. https://www.howtogeek.com/820514/how-to-copy-and-paste-text-from-pdf/.
+(4) How to Copy Text from PDF on PC and Online - Icecream Apps. https://icecreamapps.com/learn/how-to-copy-text-from-pdf.html.
+(5) How To Copy Text From a PDF - Smallpdf. https://smallpdf.com/blog/copy-text-from-pdf.
+(6) Extract Data from PDFs Easily & Quickly (table form/image/text/pages). https://www.youtube.com/watch?v=lkdYxiGUFUA.
+(7) How to Extract Text from PDF using Power Automate | Power Automate Tutorial. https://www.youtube.com/watch?v=ecu-RYvVaT8.
+(8) How to extract text from PDFs in just a few clicks with Parseur. https://www.youtube.com/watch?v=UIV-qkLCP3M.
+(9) undefined. https://parseur.com/pdf-parser.

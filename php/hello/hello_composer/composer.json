@@ -1,0 +1,6 @@
+{
+    "name": "dwight/hello-world-composer",
+    "require": {
+        "monolog/monolog": "*"
+    }
+}

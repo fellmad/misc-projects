@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+    color: gray;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+}
+
+div h2 {
+    color: maroon;
+}
+
+
+https://www.lynda.com/CSS-tutorials/Checking-browser-support/80435/93992-4.html?
