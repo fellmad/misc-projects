@@ -1,3 +1,3 @@
 module hellochannels
 
-go 1.26.3
+go 1.27
